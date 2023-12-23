@@ -1,0 +1,103 @@
+@import "../../color.module";
+.days{
+  padding: 20px;
+  &__title{
+    margin-bottom: 20px;
+  }
+  &__list{
+    width: 60%;
+    padding: 10px;
+    border: 1px solid $grey5C;
+    border-radius: 10px;
+    @media (max-width: 1024px) {
+      width: 80%;
+      padding: 5px;
+    }
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+  }
+}
+.add{
+    width: 60%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 17px;
+  @media (max-width: 1024px) {
+    width: 80%;
+  }
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+
+  &__input{
+    width: 80%;
+    padding: 10px;
+    border: 1px solid $grey5C;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    transition: border-color 0.2s ease-in-out;
+    @media (min-width: 768px) {
+      &:focus:not(:active){
+      border-color: $apricot;
+      }
+      &:hover{
+        border-color: $orange;
+      }
+      &:active{
+        border-color: $orangeB1;
+      }
+    }
+    @media (max-width: 767px) {
+      &:active{
+        border-color: $orangeB1;
+      }
+    }
+    @media (max-width: 576px) {
+      width: 60%;
+    }
+
+  }
+  &__btn{
+    padding: 10px;
+    width: 20%;
+    border: 1px solid $grey5C;
+    border-left: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: background-color 0.2s ease-in-out, color  0.2s ease-in-out;
+    @media (min-width: 768px) {
+      &:focus:not(:active){
+        background-color: $apricot;
+        span{
+          color:$orange;
+        }
+      }
+      &:hover{
+        background-color: $orange;
+        span{
+          color:$white;
+        }
+      }
+      &:active{
+        background-color: $orangeB1;
+        span{
+          color:$white;
+        }
+      }
+    }
+    @media (max-width: 767px) {
+      &:active{
+        background-color: $orangeB1;
+        span{
+          color:$white;
+        }
+      }
+    }
+    @media (max-width: 576px) {
+      width: 40%;
+    }
+  }
+
+}

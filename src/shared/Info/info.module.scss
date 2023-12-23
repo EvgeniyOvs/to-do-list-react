@@ -1,0 +1,94 @@
+@import "../../color.module";
+
+.drawerWrapperEmpty{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+
+}
+.cartEmpty{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imgEmpty{
+  margin-bottom: 20px;
+}
+
+.cartTitleEmpty{
+  margin-bottom: 10px;
+}
+
+.cartDescrEmpty{
+  margin-bottom: 40px;
+  text-align: center;
+  width: 80%;
+}
+.countBtnEmpty{
+  position: relative;
+  padding: 15px 30px;
+  width: 100%;
+  border: none;
+  border-radius: 18px;
+  background: $black;
+  color: $white;
+  transition: background 0.2s ease-in-out;
+  cursor: pointer;
+}
+.countBtnEmpty:active{
+  background: var(--green7D);
+}
+.BtnEmptyArrow{
+  position: absolute;
+  left: 35px;
+  top: 17px;
+  transition: transform 0.2s ease-in-out;
+}
+.countBtnEmpty:hover .BtnEmptyArrow{
+  transform: translateX(-5px);
+
+}
+.countBtnEmpty:hover{
+  background: $black2C;
+
+}
+@media all and (min-width: 769px) and (max-width: 1024px) {
+  .countBtnEmpty{
+    padding: 15px 40px;
+  }
+  .BtnEmptyArrow{
+    top: 20px;
+    left: 40px;
+  }
+}
+@media all and (min-width: 526px) and (max-width: 769px) {
+  .countBtnEmpty{
+    padding: 15px 40px;
+  }
+  .BtnEmptyArrow{
+    top: 20px;
+    left: 40px;
+  }
+  .countBtnEmpty:hover .BtnEmptyArrow{
+    transform: translateX(-5px);
+  }
+}
+
+@media all and (min-width: 320px) and (max-width: 525px) {
+  .countBtnEmpty{
+    padding: 15px 40px;
+  }
+  .countBtnEmpty{
+    height: 40px;
+  }
+  .BtnEmptyArrow{
+    top: 14px;
+    left: 12px;
+  }
+  .countBtnEmpty:hover .BtnEmptyArrow{
+    transform: translateX(-3px);
+  }
+}

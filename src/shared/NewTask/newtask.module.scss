@@ -1,0 +1,34 @@
+@import "../../color.module";
+
+.task{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    transition: background-color 0.2s ease-in-out;
+
+}
+.task:not(:last-child){
+    border-bottom: 1px solid $grey5C;
+}
+.btn{
+    padding: 3px 3px;
+    border:1px solid $grey5C;
+    border-radius: 10px;
+    background-color: $white;
+}
+.active{
+    background-color: $green;
+}
+.btnList{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__done{
+    margin-right: 15px;
+    }
+    &__remove{
+
+    }
+}

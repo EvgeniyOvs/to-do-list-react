@@ -1,0 +1,12 @@
+.wrapper{
+  padding: 100px;
+  margin: 0 auto;
+  width: 750px;
+  text-align: center;
+  &__title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}

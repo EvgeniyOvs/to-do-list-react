@@ -1,0 +1,30 @@
+{
+  "monday": [
+    {
+      "id": "mxx9omqm75n",
+      "title": "",
+      "day": "monday",
+      "completed": false
+    }
+  ],
+  "tuesday": [],
+  "wednesday": [],
+  "thursday": [],
+  "friday": [
+    {
+      "id": "1",
+      "day": "friday",
+      "completed": false,
+      "title": "Купить хлеб"
+    }
+  ],
+  "saturday": [],
+  "sunday": [
+    {
+      "title": "",
+      "day": "sunday",
+      "completed": false,
+      "id": "2h4lbj67lhb"
+    }
+  ]
+}

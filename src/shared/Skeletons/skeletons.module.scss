@@ -1,0 +1,37 @@
+.skeletons {
+  @media (min-width: 1024px) {
+    &__dekstop{
+      display: block;
+    }
+    &__tablet{
+      display: none;
+    }
+    &__mobile{
+      display: none;
+    }
+  }
+  @media (max-width: 1023px) {
+  &__dekstop{
+    display: none;
+  }
+  &__tablet{
+    display: block;
+  }
+  &__mobile{
+    display: none;
+  }
+  }
+
+  @media (max-width: 767px) {
+    &__dekstop{
+      display: none;
+    }
+    &__tablet{
+      display: none;
+    }
+    &__mobile{
+      display: block;
+    }
+  }
+
+}
